@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="style.css">
+  <div class="container">
+    <header class="header">
+      <h1 id="title" class="text-center">Rabbit meat as alternative for Chicken and Pork</h1>
+      <p id="description" class="description text-center">
+        This is a survey to know the thoughts of Filipino citizens on rabbits for food consumption
+      </p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="form-control"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+      <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+
+      <div class="form-group">
+        <label id="number-label" for="number">Age</label>
+        <input
+          type="number"
+          name="age"
+          id="number"
+          min="10"
+          max="99"
+          class="form-control"
+          placeholder="Age"
+        />
+      </div>
+
+       <div class="form-group">
+        <p>Have you tried eating rabbit meat?</p>
+        <label>
+          <input
+            name="tried-rabbit"
+            value="yes"
+            type="radio"
+            class="input-radio"
+            checked
+          />Yes</label
+        >
+
+        <label>
+          <input
+            name="tried-rabbit"
+            value="no"
+            type="radio"
+            class="input-radio"
+          />No</label
+        >
+
+        <label
+          ><input
+            name="tried-rabbit"
+            value="not-sure"
+            type="radio"
+            class="input-radio"
+          />Not sure</label
+        >
+      </div>
+
+
+      <div class="form-group">
+        <p>Do you agree that rabbits can also be consumed for food?</p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>Select a rating</option>
+          <option value="stronglyAgree">Strongly Agree</option>
+          <option value="agree">Agree</option>
+          <option value="neither">Neither Agree nor disagree</option>
+          <option value="disagree">Disagree</option>
+          <option value="stronglyDisagree">Strongly agree</option>
+        </select>
+      </div>
+
+
+      <div class="form-group">
+        <p>
+          If you know about the nutritional benefits of rabbit meat, what will you choose?
+        </p>
+        <select id="most-like" name="mostLike" class="form-control" required>
+          <option disabled selected value>Select an option</option>
+          <option value="pork">Pork</option>
+          <option value="chicken">Chicken</option>
+          <option value="beef">Beef </option>
+          <option value="rabbitMeat">Rabbit Meat</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <p>
+          Why do you think Filipinos rarely treat rabbit as livestock? (Check all that apply)
+        </p>
+
+        <label
+          ><input
+            name="reasons"
+            value="rabbit-as-pets"
+            type="checkbox"
+            class="input-checkbox"
+          />Rabbits are considered to be pets</label
+        >
+        <label>
+          <input
+            name="reasons"
+            value="too-cute-culled"
+            type="checkbox"
+            class="input-checkbox"
+          />They are too cute to be culled</label
+        >
+        <label
+          ><input
+            name="reasons"
+            value="supply-low"
+            type="checkbox"
+            class="input-checkbox"
+          />The supply is too low</label
+        >
+        <label
+          ><input
+            name="reasons"
+            value="rabbit-expensive"
+            type="checkbox"
+            class="input-checkbox"
+          />Rabbit meat is too expensive</label
+        >
+        <label
+          ><input
+            name="reasons"
+            value="difficult-cook"
+            type="checkbox"
+            class="input-checkbox"
+          />It is difficult to cook rabbit meat</label
+        >
+      </div>
+
+      <div class="form-group">
+        <p>What are your thoughts about the consumption of rabbit meat?</p>
+        <textarea
+          id="comments"
+          class="input-textarea"
+          name="comment"
+          placeholder="Enter your comment here..."
+        ></textarea>
+      </div>
+
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+</html>
